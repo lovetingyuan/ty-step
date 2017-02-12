@@ -2,6 +2,7 @@
 异步流程控制，可以以并行或串行的方式执行给定的函数序列，支持参数传递和错误捕获
 
 Inspired by [`step`](https://github.com/creationix/step) and [`gulp-sequence`](https://github.com/teambition/gulp-sequence)
+
 ---------
 ## install
 `npm install ty-step`
