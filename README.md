@@ -1,5 +1,5 @@
 # ty-step
-https://travis-ci.org/lovetingyuan/ty-step.svg?branch=master
+
 [![travis-ci](https://travis-ci.org/lovetingyuan/ty-step.svg?branch=master "CI")](https://travis-ci.org/lovetingyuan/ty-step)
 [![Version](https://img.shields.io/npm/v/ty-step.svg "version")](https://www.npmjs.com/package/ty-step)
 [![License](https://img.shields.io/npm/l/ty-step.svg "License")](https://www.npmjs.com/package/ty-step)
