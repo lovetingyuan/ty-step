@@ -4,7 +4,7 @@
   "description": "简单的异步流程控制方法，可以并行和串行执行给出的方法序列，适用于nodejs和浏览器环境",
   "main": "index.min.js",
   "scripts": {
-    "test": "npm run build && node ./node_modules/babel-cli/bin/babel test.babel.js --out-file test.js && node ./node_modules/mocha/bin/mocha test.js -t 50000 && node ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "test": "node ./node_modules/babel-cli/bin/babel test.babel.js --out-file test.js && node ./node_modules/mocha/bin/mocha test.js -t 50000 && node ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
     "lint": "node ./node_modules/eslint/bin/eslint -f table -o eslintreport.txt --fix index.js",
     "build": "node ./node_modules/babel-cli/bin/babel index.js --out-file index.min.js && node ./node_modules/uglify-js/bin/uglifyjs index.min.js --comments /^!/ -o index.min.js"
   },
