@@ -25,7 +25,7 @@ var af = function (time) {
 }
 var task = step(af(200), af(100), [af(150), af(80), af(250)], af(400), af(50))
 task(function (err, payload) {
-  if(err)
+  if (err)
     console.error(err)
   else
     console.log(payload) // payload = [200, 100, [80, 150, 250], 400, 50]
