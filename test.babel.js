@@ -3,13 +3,12 @@ var assert = require('chai').assert;
 //step 返回的是一个函数，这个函数的参数是callback, 参数为err和data
 var step = require('./index.min');
 
-function f(time, err) {
-  err = err || null
+function f(time, err = null) {
   return function(next, payload) {
     if (time === 0)
       next(err, time)
     else
-      setTimeout(function() {
+      setTimeout(() => {
         next(err, time);
       }, time)
   }
@@ -152,8 +151,7 @@ describe('测试错误捕获', function() {
 })
 
 describe('测试异步结果传递', function() {
-  function f(time, err) {
-    err = err || null
+  function f(time, err = null) {
     return function(next, payload) {
       setTimeout(function() {
         payload = Array.isArray(payload) ? payload.reduce((p, c) => p + c) : payload
