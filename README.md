@@ -10,7 +10,7 @@ Inspired by [`step`](https://github.com/creationix/step) and [`gulp-sequence`](h
 
 ---------
 ## Install
-`npm install ty-step`
+`npm install ty-step` or `<script src="index.min.js"></script>`
 
 ## Usage
 
