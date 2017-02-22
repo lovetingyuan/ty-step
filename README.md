@@ -33,7 +33,7 @@ task(function (err, payload) {
 })
 ```
 
-`step`接收一系列的函数或者由函数组成的数组作为参数，这些函数代表要执行的任务，接收`next`和`payload`作为参数。`next`在任务结束时调用，传入的参数为`error`和`data`，`error`代表上一个函数是否发生了错误，若不为`null`则表示发生了错误，会中断执行后续函数，`data`表示上一个函数中`next`传递的结果。`step`返回一个函数，该函数接收一个`callback`作为参数，表示对最终结果的处理，同样接收`error`和`data`作为参数
+`step`接收一系列的函数或者由函数组成的数组作为参数，这些函数代表要执行的任务，接收`next`和`payload`作为参数。`next`在任务结束时调用，传入的参数为`error`和`data`，`error`代表上一个函数是否发生了错误，若不为`null`则表示发生了错误，会中断执行后续函数，`data`表示上一个函数中`next`传递的结果。`step`返回一个`thunk`函数，传递的`callback`表示对最终结果的处理，同样接收`error`和`data`作为参数
 
 ## License
 **MIT**
