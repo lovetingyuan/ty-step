@@ -2,7 +2,7 @@
 
 [![travis-ci](https://travis-ci.org/lovetingyuan/ty-step.svg?branch=master "CI")](https://travis-ci.org/lovetingyuan/ty-step)
 [![Version](https://img.shields.io/npm/v/ty-step.svg "version")](https://www.npmjs.com/package/ty-step)
-[![Version](https://david-dm.org/lovetingyuan/ty-step/status.svg "dependencies")](https://david-dm.org/lovetingyuan/ty-step)
+[![Dependencies](https://david-dm.org/lovetingyuan/ty-step/status.svg "dependencies")](https://david-dm.org/lovetingyuan/ty-step)
 [![License](https://img.shields.io/npm/l/ty-step.svg "License")](https://github.com/lovetingyuan/ty-step/blob/master/LICENSE)
 
 简单的异步流程控制，可以以并行或串行的方式执行给定的函数序列，支持参数传递和错误捕获
