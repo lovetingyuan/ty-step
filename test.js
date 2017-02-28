@@ -9,7 +9,7 @@ function f(time, err) {
       }, time)
   }
 }
-var step = step || require('./index')
+var step = step || require('./index.min')
 var assert = assert || require('chai').assert
 
 describe('测试参数合法性', function() {
